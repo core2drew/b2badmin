@@ -616,11 +616,18 @@ template {
     .sidemenu-filter > .filter > .header > .title {
       font-weight: bold;
       font-size: 0.9375rem; }
+  .sidemenu-filter > .employees > .header,
+  .sidemenu-filter > .revenue > .header {
+    margin-bottom: 15px; }
   .sidemenu-filter > .employees > .select-range,
   .sidemenu-filter > .revenue > .select-range {
     color: #3b6d8e;
     font-size: 0.875rem;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-bottom: 15px; }
+  .sidemenu-filter > .employees > .image,
+  .sidemenu-filter > .revenue > .image {
+    width: 100%; }
 
 .filter-by {
   background-color: #fff;

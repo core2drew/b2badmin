@@ -91,10 +91,17 @@
 
   > .employees,
   > .revenue {
+    > .header {
+      margin-bottom: 15px;
+    }
     > .select-range {
       color: $blue-1;
       font-size: 14px;
       margin-left: auto;
+      margin-bottom: 15px;
+    }
+    > .image {
+      width: 100%;
     }
   }
 }
