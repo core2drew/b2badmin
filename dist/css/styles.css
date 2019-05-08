@@ -579,7 +579,7 @@ template {
     padding: 5px 10px; }
     .sidemenu-filter > .field > input {
       border: none;
-      max-width: 170px;
+      max-width: 177px;
       width: 100%; }
   .sidemenu-filter > .accordion {
     padding: 15px 0; }
@@ -771,7 +771,7 @@ template {
       height: 23px;
       color: #e2e2e2; }
     .table > tbody > tr > td.call {
-      min-width: 120px;
+      min-width: 80px;
       text-align: center; }
       .table > tbody > tr > td.call > i[class*=icon] {
         color: #f89720;
