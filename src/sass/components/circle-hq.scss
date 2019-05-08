@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.circle-hq {
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 23px;
+  height: 23px;
+  padding: 5px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: $blue-1;
+}

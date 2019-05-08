@@ -1,0 +1,38 @@
+@import "variables.scss";
+
+.filter-by {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  > .header {
+    display: flex;
+    color: $blue-1;
+    margin-bottom: 15px;
+    > .filtercount {
+      color: $gray-1;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    > .actions {
+      display: flex;
+      font-size: 14px;
+      margin-left: auto;
+    }
+    > .actions > .action {
+      color: $blue-1;
+    }
+    > .actions > .action:nth-last-child(n + 2) {
+      margin-right: 10px;
+    }
+  }
+  > .filters {
+    display: flex;
+    > .filter {
+      font-size: 14px;
+      color: #fff;
+      padding: 5px 10px;
+      background-color: $blue-2;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.table-options {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  > .button {
+    color: #fff;
+    border-color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    &:nth-last-child(n + 2) {
+      margin-right: 10px;
+    }
+  }
+}

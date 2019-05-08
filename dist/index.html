@@ -11,113 +11,192 @@
 </head>
 <body>
   <nav class="navbar">
-    <img src="/images/B2B-logo-light.png" />
-    <div class="links">
-      <a href="#">My Sales Home</a>
-      <a href="#">My Maketing Home</a>
-      <a href="#">Market Insights</a>
-      <a href="#">Data Enrichment</a>
-    </div>
-    <div class="user">
-      <span class="name">Rizza Sy</span>
-      <span class="support">Support</span>
-      <p class="downloadsavail">Downloads Available: 926, 967 or 1.1M</p>
+    <div class="container d-flex align-items-end">
+      <img src="/images/B2B-logo-light.png" />
+      <div class="links">
+        <a class="link" href="#">My Sales Home</a>
+        <a class="link" href="#">My Maketing Home</a>
+        <a class="link" href="#">Market Insights</a>
+        <a class="link" href="#">Data Enrichment</a>
+      </div>
+      <div class="user d-flex flex-column align-items-end">
+        <div class="namesupport">
+            <span class="name">Rizza Sy</span>
+            <span class="support">Support</span>
+        </div>
+        <p class="downloadsavail">Downloads Available: 926, 967 or 1.1M</p>
+      </div>
     </div>
   </nav>
-  <aside>
-    <button>Search</button>
-    <span class="hq-only">HQ Only</span>
-    <span class="hq-only">Clear All</span>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      <input type="text" />
-    </div>
-    <div class="field">
-      Education
-    </div>
-    <div class="field">
-      Company Attribute
-    </div>
-    <div class="field">
-      Tags
-    </div>
-    <div class="employees">
-      <p>Employees</p>
-      <span>Click to Select Range</span>
-    </div>
-    <div class="revenue">
-      <p>Revenue</p>
-      <div class="showunknown">
-          <input type="checkbox" />
-          <label>Show Unknown</label>
+  <div id="Content" class="container">
+    <aside class="sidemenu-filter">
+      <button class="search button -primary">Search</button>
+      <div class="hqonlyclear">
+        <span class="hq-only"><span class="circle-hq">HQ</span> Only</span>
+        <button class="clear button -tertiary">Clear All</button>
       </div>
-      <span>Click to Select Range</span>
-    </div>
-    <div class="filter">
-        <p>Filter Downloaded Data</p>
-        <button>By Me</button>
-        <button>Others in subscription</button>
-        <button>No One</button>
+      <div class="field">
+        <input type="text" placeholder="Company"/>
       </div>
-  </aside>
-  <div class="filterby">
-    <div class="header">
-      <span>Filtering By ( 1 )</span>
-      <div>
-        <span>Show Filters By Selection Sequence</span>
-        <span>Save Search Profile</span>
-        <span>Clear All</span>
+      <div class="field">
+        <input type="text" placeholder="Contact Name"/>
       </div>
+      <div class="field">
+        <input type="text" placeholder="Product"/>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Location"/>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Industry"/>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Department"/>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Seniority"/>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Role"/>
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Title e.g. 'Manager'"/>
+      </div>
+      <div class="accordion">
+        <div class="item">
+          Education
+        </div>
+        <div class="item">
+          Company Attribute
+        </div>
+        <div class="item">
+          Tags
+        </div>
+      </div>
+      <div class="employees">
+        <div class="header">
+          <p class="title">Employees</p>
+        </div>
+        <button class="select-range button -tertiary">Click to Select Range</button>
+      </div>
+      <div class="revenue">
+        <div class="header">
+          <p class="title">Revenue</p>
+          <div class="showunknown">
+            <input type="checkbox" />
+            <label class="label">Show Unknown</label>
+          </div>
+        </div>
+        <button class="select-range button -tertiary">Click to Select Range</button>
+      </div>
+      <div class="filter">
+          <div class="header">
+            <p class="title">Filter Downloaded Data</p>
+          </div>
+          <button class="button -secondary">By Me</button>
+          <button class="button -secondary">Others in subscription</button>
+          <button class="button -secondary">No One</button>
+        </div>
+    </aside>
+    <div class="main">
+      <div class="filter-by">
+        <div class="header">
+          <span class="filtercount">Filtering By (1)</span>
+          <div class="actions">
+            <button class="button -tertiary action">Show Filters By Selection Sequence</button>
+            <button class="button -tertiary action">Save Search Profile</button>
+            <button class="button -tertiary action">Clear All</button>
+          </div>
+        </div>
+        <div class="filters">
+          <span class="filter">Americas</span>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab -active">
+          <p class="count">1,864</p>
+          <label class="label">Company Locations</label>
+        </div>
+        <div class="tab">
+          <p class="count">239,676</p>
+          <label class="label">Contacts</label>
+        </div>
+        <button class="download button -tertiary">Download Results</button>
+      </div>
+
+      <div class="table-options">
+        <button class="button -secondary">Refresh List</button>
+        <button class="button -secondary">Display 50</button>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              <input type="checkbox" />
+              Company Name 
+            </th>
+            <th>Products</th>
+            <th>Employees</th>
+            <th>Revenue</th>
+            <th>Industry</th>
+            <th>Location</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="checkbox" />
+              IBM
+            </td>
+            <td class="number">
+              2,477
+            </td>
+            <td class="number">
+              > 10,000
+            </td>
+            <td class="number">
+              > 10B
+            </td>
+            <td>
+              IT & Serv Other
+            </td>
+            <td>
+              Armonk, New York, United States
+            </td>
+            <td>
+                
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" />
+              IBM
+            </td>
+            <td class="number">
+              2,477
+            </td>
+            <td class="number">
+              > 10,000
+            </td>
+            <td class="number">
+              > 10B
+            </td>
+            <td>
+              IT & Serv Other
+            </td>
+            <td>
+              Armonk, New York, United States
+            </td>
+            <td>
+                
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-  <div class="tabs">
-    <div>
-      <h2>1,864</h2>
-      <p>Company Locations</p>
-    </div>
-    <div>
-      <h2>239,676</h2>
-      <p>Contacts</p>
-    </div>
-    <span>Download Results</span>
-  </div>
-  <div class="tableoptions">
-    <button>Refresh List</button>
-    <button>Display 50</button>
-  </div>
-  <div class="table">
-    <div class="header">
-      <div>Company Name</div>
-      <div>Products</div>
-      <div>Employees</div>
-      <div>Revenue</div>
-      <div>Industry</div>
-      <div>Location</div>
-    </div>
-    <div class="body"></div>
   </div>
 </body>
 </html>
