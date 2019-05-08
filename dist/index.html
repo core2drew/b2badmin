@@ -12,7 +12,7 @@
 <body>
   <nav class="navbar">
     <div class="container d-flex align-items-end">
-      <img src="/images/B2B-logo-light.png" />
+      <img src="./images/B2B-logo-light.png" />
       <div class="links">
         <a class="link" href="#">My Sales Home</a>
         <a class="link" href="#">My Maketing Home</a>
@@ -24,7 +24,10 @@
             <span class="name">Rizza Sy</span>
             <span class="support">Support</span>
         </div>
-        <p class="downloadsavail">Downloads Available: 926, 967 or 1.1M</p>
+        <span class="downloadsavail">
+          Downloads Available: 926, 967 or 1.1M
+          <i class="icon-chevron-down"></i>
+        </span>
       </div>
     </div>
   </nav>
@@ -43,18 +46,23 @@
       </div>
       <div class="field">
         <input type="text" placeholder="Product"/>
+        <i class="icon-chevron-right"></i>
       </div>
       <div class="field">
         <input type="text" placeholder="Location"/>
+        <i class="icon-chevron-right"></i>
       </div>
       <div class="field">
         <input type="text" placeholder="Industry"/>
+        <i class="icon-chevron-right"></i>
       </div>
       <div class="field">
         <input type="text" placeholder="Department"/>
+        <i class="icon-chevron-right"></i>
       </div>
       <div class="field">
         <input type="text" placeholder="Seniority"/>
+        <i class="icon-chevron-right"></i>
       </div>
       <div class="field">
         <input type="text" placeholder="Role"/>
@@ -65,12 +73,15 @@
       <div class="accordion">
         <div class="item">
           Education
+          <i class="icon-chevron-right"></i>
         </div>
         <div class="item">
           Company Attribute
+          <i class="icon-chevron-right"></i>
         </div>
         <div class="item">
           Tags
+          <i class="icon-chevron-right"></i>
         </div>
       </div>
       <div class="employees">
@@ -101,7 +112,7 @@
     <div class="main">
       <div class="filter-by">
         <div class="header">
-          <span class="filtercount">Filtering By (1)</span>
+          <span class="filtercount"><i class="icon-minus"></i> Filtering By (1)</span>
           <div class="actions">
             <button class="button -tertiary action">Show Filters By Selection Sequence</button>
             <button class="button -tertiary action">Save Search Profile</button>
@@ -109,7 +120,12 @@
           </div>
         </div>
         <div class="filters">
-          <span class="filter">Americas</span>
+          <span class="filter">
+              Americas 
+              <span class="remove">
+                <i class="icon-clear"></i>
+              </span>
+          </span>
         </div>
       </div>
 
@@ -122,12 +138,12 @@
           <p class="count">239,676</p>
           <label class="label">Contacts</label>
         </div>
-        <button class="download button -tertiary">Download Results</button>
+        <button class="download button -tertiary"><i class="icon-csv-file"></i>Download Results</button>
       </div>
 
       <div class="table-options">
-        <button class="button -secondary">Refresh List</button>
-        <button class="button -secondary">Display 50</button>
+        <button class="refresh button -secondary"><i class="icon-refresh"></i>Refresh List</button>
+        <button class="display button -secondary">Display <span class="count">50</span> <i class="icon-chevron-down"></i></button>
       </div>
 
       <table class="table">
@@ -136,12 +152,28 @@
             <th>
               <input type="checkbox" />
               Company Name 
+              <i class="icon-chevron-down"></i>
             </th>
-            <th>Products</th>
-            <th>Employees</th>
-            <th>Revenue</th>
-            <th>Industry</th>
-            <th>Location</th>
+            <th>
+              Products
+              <i class="icon-chevron-down"></i>
+            </th>
+            <th>
+              Employees
+              <i class="icon-chevron-down"></i>
+            </th>
+            <th>
+              Revenue
+              <i class="icon-chevron-down"></i>
+            </th>
+            <th>
+              Industry
+              <i class="icon-chevron-down"></i>
+            </th>
+            <th>
+              Location
+              <i class="icon-chevron-down"></i>
+            </th>
             <th></th>
           </tr>
         </thead>
@@ -163,11 +195,12 @@
             <td>
               IT & Serv Other
             </td>
-            <td>
-              Armonk, New York, United States
+            <td class="location">
+              <span class="circle-hq">HQ</span>
+              <span class="location">Armonk, New York, United States</span>
             </td>
-            <td>
-                
+            <td class="call">
+              <i class="icon-telephone"></i>
             </td>
           </tr>
           <tr>
@@ -187,11 +220,12 @@
             <td>
               IT & Serv Other
             </td>
-            <td>
-              Armonk, New York, United States
+            <td class="location">
+              <i class="icon-map-pin"></i>
+              <span class="location">Armonk, New York, United States</span>
             </td>
-            <td>
-                
+            <td class="call">
+              <i class="icon-telephone"></i>
             </td>
           </tr>
         </tbody>

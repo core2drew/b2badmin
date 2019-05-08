@@ -511,6 +511,9 @@ template {
     padding: 15px 20px; }
 
 .circle-hq {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-size: 0.625rem;
   width: 23px;
@@ -540,12 +543,16 @@ template {
 
 .navbar > .container > .user {
   margin-left: auto; }
-  .navbar > .container > .user > .namesupport > .name,
-  .navbar > .container > .user > .namesupport > .support {
-    text-transform: uppercase; }
+  .navbar > .container > .user > .namesupport {
+    margin-bottom: 10px; }
+    .navbar > .container > .user > .namesupport > .name,
+    .navbar > .container > .user > .namesupport > .support {
+      text-transform: uppercase; }
   .navbar > .container > .user > .downloadsavail {
-    margin-top: 5px;
-    margin-bottom: 0; }
+    margin: 0; }
+    .navbar > .container > .user > .downloadsavail > i[class*=icon] {
+      font-size: 0.625rem;
+      margin-left: 5px; }
 
 .sidemenu-filter {
   display: flex;
@@ -638,11 +645,27 @@ template {
   .filter-by > .filters {
     display: flex; }
     .filter-by > .filters > .filter {
+      display: flex;
+      align-items: center;
       font-size: 0.875rem;
       color: #fff;
       padding: 5px 10px;
       background-color: #3a6d8f;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      border-radius: 4px; }
+      .filter-by > .filters > .filter > .remove {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        color: #3b6d8e;
+        font-size: 0.4375rem;
+        padding: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        margin-left: 7px; }
 
 .tabs {
   display: flex;
@@ -666,6 +689,9 @@ template {
     align-self: flex-end;
     color: #fff;
     font-size: 0.875rem; }
+    .tabs > .download > i[class*=icon] {
+      font-size: 1.5625rem;
+      margin-right: 10px; }
 
 .table-options {
   padding: 10px;
@@ -675,9 +701,22 @@ template {
     color: #fff;
     border-color: #fff;
     font-weight: normal;
-    font-size: 0.9375rem; }
+    font-size: 0.9375rem;
+    padding-top: 8px;
+    padding-bottom: 8px; }
     .table-options > .button:nth-last-child(n + 2) {
       margin-right: 10px; }
+  .table-options > .refresh {
+    border-color: #8298a4;
+    color: #8298a4; }
+    .table-options > .refresh > i[class*=icon] {
+      margin-right: 10px; }
+  .table-options > .display > i[class*=icon] {
+    margin-left: 10px;
+    font-size: 0.625rem; }
+  .table-options > .display > .count {
+    font-weight: bold;
+    margin-left: 10px; }
 
 .table {
   width: 100%;
@@ -688,19 +727,48 @@ template {
     .table > thead > tr > th {
       font-weight: normal;
       text-align: left;
-      padding: 10px 5px; }
+      padding: 10px;
+      font-size: 0.9375rem; }
+    .table > thead > tr > th > i[class*=icon] {
+      font-size: 0.625rem;
+      float: right;
+      margin-top: 5px; }
     .table > thead > tr > th > input {
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin-right: 10px; }
   .table > tbody > tr {
     background-color: #fff; }
     .table > tbody > tr:nth-child(odd) {
       background-color: #f2f2f2; }
+    .table > tbody > tr > td.number {
+      text-align: right; }
     .table > tbody > tr > td {
-      padding: 10px 5px; }
+      padding: 10px; }
     .table > tbody > tr > td:nth-last-child(n + 2) {
       border-right: 1px solid #e2e2e2; }
     .table > tbody > tr > td > input {
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin-right: 10px; }
+    .table > tbody > tr > td.location > .location {
+      margin-left: 10px;
+      max-width: 250px;
+      width: 100%;
+      word-wrap: break-word;
+      display: inline-block; }
+    .table > tbody > tr > td.location > i[class*=icon],
+    .table > tbody > tr > td.location > .circle-hq {
+      float: left; }
+    .table > tbody > tr > td.location > i[class*=icon] {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      color: #e2e2e2; }
+    .table > tbody > tr > td.call {
+      min-width: 120px;
+      text-align: center; }
+      .table > tbody > tr > td.call > i[class*=icon] {
+        color: #f89720;
+        font-size: 1.25rem; }
 
 .main > .tabs,
 .main > .table-options {

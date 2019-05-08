@@ -26,13 +26,17 @@
 .navbar > .container > .user {
   margin-left: auto;
   > .namesupport {
+    margin-bottom: 10px;
     > .name,
     > .support {
       text-transform: uppercase;
     }
   }
   > .downloadsavail {
-    margin-top: 5px;
-    margin-bottom: 0;
+    margin: 0;
+    > i[class*=icon] {
+      font-size: 10px;
+      margin-left: 5px;
+    }
   }
 }

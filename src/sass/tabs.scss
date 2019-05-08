@@ -26,5 +26,9 @@
     align-self: flex-end;
     color: #fff;
     font-size: 14px;
+    > i[class*=icon] {
+      font-size: 25px;
+      margin-right: 10px;
+    }
   }
 }
