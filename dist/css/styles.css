@@ -576,7 +576,12 @@ template {
   .sidemenu-filter > .field {
     margin-bottom: 5px;
     border: 1px solid #beccd5;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    display: flex; }
+    .sidemenu-filter > .field.-active > i[class*=icon] {
+      color: #f89720; }
+    .sidemenu-filter > .field > i[class*=icon] {
+      color: #3b6d8e; }
     .sidemenu-filter > .field > input {
       border: none;
       max-width: 177px;
@@ -584,8 +589,13 @@ template {
   .sidemenu-filter > .accordion {
     padding: 15px 0; }
     .sidemenu-filter > .accordion > .item {
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 10px;
       font-weight: bold; }
+      .sidemenu-filter > .accordion > .item > i[class*=icon] {
+        color: #3b6d8e; }
   .sidemenu-filter > .employees > .header > .title {
     margin-bottom: 5px; }
   .sidemenu-filter > .revenue > .header {
@@ -638,9 +648,13 @@ template {
     color: #3b6d8e;
     margin-bottom: 15px; }
     .filter-by > .header > .filtercount {
+      display: flex;
+      align-items: center;
       color: #666666;
       font-size: 0.875rem;
       font-weight: bold; }
+      .filter-by > .header > .filtercount > i[class*=icon] {
+        margin-right: 5px; }
     .filter-by > .header > .actions {
       display: flex;
       font-size: 0.875rem;
@@ -750,7 +764,7 @@ template {
     .table > tbody > tr > td.number {
       text-align: right; }
     .table > tbody > tr > td {
-      padding: 10px; }
+      padding: 15px 10px; }
     .table > tbody > tr > td:nth-last-child(n + 2) {
       border-right: 1px solid #e2e2e2; }
     .table > tbody > tr > td > input {

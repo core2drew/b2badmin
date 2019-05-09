@@ -27,17 +27,31 @@
     margin-bottom: 5px;
     border: 1px solid #beccd5;
     padding: 5px 10px;
+    display: flex;
+    &.-active > i[class*=icon] {
+      color: $yellow-1;
+    }
+    > i[class*=icon]{
+      color: $blue-1;
+    }
     > input {
       border: none;
       max-width: 177px;
       width: 100%;
     }
   }
+
   > .accordion {
     padding: 15px 0;
     > .item{
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 10px;
       font-weight: bold;
+      > i[class*=icon] {
+        color: $blue-1;
+      }
     }
   }
 

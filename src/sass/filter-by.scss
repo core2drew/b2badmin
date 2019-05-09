@@ -9,9 +9,14 @@
     color: $blue-1;
     margin-bottom: 15px;
     > .filtercount {
+      display: flex;
+      align-items: center;
       color: $gray-1;
       font-size: 14px;
       font-weight: bold;
+      > i[class*=icon] {
+        margin-right: 5px;
+      }
     }
     > .actions {
       display: flex;
